@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Create professional, ATS-friendly resumes with this dynamic resume builder. Easily customize sections like education, experience, and projects, with real-time preview and export options to Word. Perfect for job seekers and freshers looking to make a lasting impression."
+    />
+
+    <title>Smart Resume Builder | ATS Friendly CV Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon.jpeg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Smart <span>Resume</span></h1>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li>
+            <a href="#resume">Resume</a>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="home" id="home">
+        <div class="img">
+          <img src="images/resume.png" alt="ATS resume example" />
+        </div>
+        <div class="text">
+          <h2>Build Your ATS-Friendly Resume Instantly</h2>
+          <p>Smart, Modern and ATS-friendly</p>
+          <a href="#resume" class="cta-btn">Start Building Now</a>
+        </div>
+      </section>
+      <section class="features" id="features">
+        <h2>Why Choose Smart Resume?</h2>
+        <p>Everything you need to build an ATS-friendly resume in minutes.</p>
+        <div class="featured-card">
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-hand-pointer"></i>
+            </div>
+            <h3>Easy to Use</h3>
+            <p>
+              Intuitive interface makes building your resume quick and
+              effortless, even for beginners.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon"><i class="fa fa-chart-bar"></i></div>
+            <h3>Resume Analytics</h3>
+            <p>
+              Coming soon: Insights on your resume's strengths and areas to
+              improve
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <h3>Instant Preview</h3>
+            <p>
+              Preview your resume in real-time before downloading to ensure it
+              looks perfect.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon"><i class="fa fa-file-word"></i></div>
+            <h3>Export to Word</h3>
+            <p>Download your resume as Word document</p>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h3>ATS Optimized</h3>
+            <p>
+              Resumes are designed to pass application tracking systems for
+              higher interview chances.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <h3>Mobile-Friendly</h3>
+            <p>
+              Build and preview your resume on any device, optimized for
+              smartphones and tablets.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="resume" id="resume">
+        <h2>Build Your Resume</h2>
+
+        <form id="resume-form" action="#" method="post">
+          <div class="resume-card">
+            <h3>Personal Information</h3>
+            <label for="title">Professional Title <span>*</span></label>
+            <input
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Software Developer"
+              required
+            />
+            <label for="fullname">Full Name <span>*</span></label>
+            <input
+              type="text"
+              name="fullname"
+              id="fullname"
+              placeholder="John"
+              required
+            />
+            <label for="email">Email <span>*</span></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="john167@gmail.com"
+              required
+            />
+            <label for="phone-number">Phone Number <span>*</span></label>
+            <input
+              type="tel"
+              name="phone-number"
+              id="phone-number"
+              placeholder="8483939939"
+              pattern="[0-9]{10}"
+              maxlength="10"
+              required
+            />
+            <label for="user-location">Location <span>*</span></label>
+            <input
+              type="text"
+              name="user-location"
+              id="user-location"
+              placeholder="chennai"
+              required
+            />
+            <label for="linkedin">LinkedIn URL</label>
+            <input
+              type="url"
+              name="linkedin"
+              id="linkedin"
+              placeholder="https://www.linkedin.com/in/yourprofile"
+            />
+            <label for="github">GitHub URL</label>
+            <input
+              type="url"
+              name="github"
+              id="github"
+              placeholder="https://github.com/username"
+            />
+            <label for="summary">Summary / Objective</label>
+            <textarea
+              name="summary"
+              id="summary"
+              cols="40"
+              rows="3"
+              placeholder="Write 1-2 lines about yourself"
+            ></textarea>
+          </div>
+          <div class="education-container">
+            <div class="resume-card" id="education-card">
+              <h3>Education</h3>
+              <label for="degree">Name of the Degree <span>*</span></label>
+              <input
+                type="text"
+                name="degree"
+                id="degree"
+                placeholder="B.Sc."
+                required
+              />
+              <label for="major">Major / Specialization <span>*</span></label>
+              <input
+                type="text"
+                name="major"
+                id="major"
+                placeholder="Computer Science"
+                required
+              />
+
+              <label for="college"
+                >Name of the College/School <span>*</span></label
+              >
+              <input
+                type="text"
+                name="college"
+                id="college"
+                placeholder="College Name/School Name"
+                required
+              />
+              <label for="start-date-education"
+                >Start Date <span>*</span></label
+              >
+              <input
+                type="date"
+                name="start-date-education"
+                id="start-date-education"
+                required
+              />
+              <label for="end-date-education">End Date <span>*</span></label>
+              <input
+                type="date"
+                name="end-date-education"
+                id="end-date-education"
+                required
+              />
+              <label for="percentage">Percentage</label>
+              <input
+                type="text"
+                name="percentage"
+                id="percentage"
+                placeholder="100 percent"
+              />
+              <label for="grade">Grade / GPA</label>
+              <input
+                type="text"
+                name="grade"
+                id="grade"
+                placeholder="9.0 / 10"
+              />
+
+              <button type="button" class="add-btn" aria-label=" Add Education">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button
+                type="button"
+                class="remove-btn"
+                aria-label="Remove Education"
+              >
+                <i class="fa-solid fa-minus"></i>
+              </button>
+            </div>
+          </div>
+          <div class="experience-container">
+            <div class="resume-card" id="experience-card">
+              <h3>Experience</h3>
+              <label for="job-title">Job Title </label>
+              <input
+                type="text"
+                name="job-title"
+                id="job-title"
+                placeholder="Senior developer"
+              />
+              <label for="company-name">Company Name </label>
+              <input
+                type="text"
+                name="company-name"
+                id="company-name"
+                placeholder="Company name"
+              />
+              <label for="company-location">Location </label>
+              <input
+                type="text"
+                name="company-location"
+                id="company-location"
+                placeholder="Chennai"
+              />
+              <label for="start-date-job">Start Date </label>
+              <input type="date" name="start-date-job" id="start-date-job" />
+              <label for="end-date-job">End Date </label>
+              <input type="date" name="end-date-job" id="end-date-job" />
+              <label for="achievements">Achievements</label>
+              <textarea
+                name="achievements"
+                id="achievements"
+                cols="40"
+                rows="5"
+                placeholder="List your achievements, separated by commas or bullet points"
+              ></textarea>
+              <button type="button" class="add-btn" aria-label="Add Experience">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button
+                type="button"
+                class="remove-btn"
+                aria-label="Remove Experience"
+              >
+                <i class="fa-solid fa-minus"></i>
+              </button>
+            </div>
+          </div>
+          <div class="resume-card" id="skill-card">
+            <h3>Skills</h3>
+            <label for="skills">Skills <span>*</span></label>
+            <input
+              type="text"
+              name="skills"
+              id="skills"
+              placeholder="Java,python,.."
+              required
+            />
+          </div>
+          <div class="project-container">
+            <div class="resume-card" id="project-card">
+              <h3>Project/Internship</h3>
+              <label for="project-title">Title/Role </label>
+              <input
+                type="text"
+                name="project-title"
+                id="project-title"
+                placeholder="Name of the project or internship"
+              />
+              <label for="project-organization">Organization/Company</label>
+              <input
+                type="text"
+                name="project-organization"
+                id="project-organization"
+                placeholder="Name of the Organization or Company"
+              />
+              <label for="start-date-project">Start Date </label>
+              <input
+                type="date"
+                name="start-date-project"
+                id="start-date-project"
+              />
+              <label for="end-date-project">End Date </label>
+              <input
+                type="date"
+                name="end-date-project"
+                id="end-date-project"
+              />
+              <label for="description"> Description </label>
+              <textarea
+                name="description"
+                id="description"
+                cols="40"
+                rows="5"
+                placeholder="Achievements or Description about project"
+              ></textarea>
+              <label for="project-technologies"
+                >Technologies/Skills Used
+              </label>
+              <input
+                type="text"
+                name="project-technologies"
+                id="project-technologies"
+                placeholder="HTML,CSS,..."
+              />
+              <label for="project-link">Project Link </label>
+              <input
+                type="url"
+                name="project-link"
+                id="project-link"
+                placeholder="https://john16.github.io/myproject/"
+              />
+              <button type="button" class="add-btn" aria-label="Add Project">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button
+                type="button"
+                class="remove-btn"
+                aria-label="Remove Project"
+              >
+                <i class="fa-solid fa-minus"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="resume-actions">
+            <button class="preview-btn" id="preview-btn" type="submit">
+              <i class="fa-solid fa-eye"></i> Preview
+            </button>
+            <button class="word-btn" type="button" id="word-btn">
+              <i class="fa-solid fa-file-word"></i> Convert to word
+            </button>
+          </div>
+        </form>
+        <div id="resumeModal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" id="close-btn" role="button" tabindex="0"
+              >&times;</span
+            >
+            <div id="resumePreview"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <p>For queries or feedback contact us</p>
+        <p>
+          Email:
+          <a href="mailto:smartResume08@gmail.com">smartResume08@gmail.com</a>
+        </p>
+      </section>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
